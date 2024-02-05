@@ -157,4 +157,14 @@ class HomeController extends Controller
         ]);
     }
 
+    public function privacyPolicyShow()
+    {
+        return view('Front.privacy_Policy');
+    }
+
+    public function contactFormShow()
+    {
+        return view('Front.contact');
+    }
+
 }

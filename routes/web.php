@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\Categories\CategoryController;
 use App\Http\Controllers\Admin\Dashboard\DashboardController;
 use App\Http\Controllers\Admin\MainSlide\MainSlideController;
 use App\Http\Controllers\Front\Users\Home\UserPageController;
+use App\Http\Controllers\Admin\Auth\Social\SocialLoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,15 @@ Route::get('/user-logout',[UserPageController::class, 'userLogout']) -> name('us
 Route::get('/all-products',[HomeController::class, 'products'])->name('home.all-products');
 
 Route::get('/product-detail/{id}',[HomeController::class, 'show'])->name('product-detail.show');
+
+Route::get('/Privacy-Policy',[HomeController::class, 'privacyPolicyShow'])->name('Privacy-Policy.show');
+
+Route::get('/Contact',[HomeController::class, 'contactFormShow'])->name('contact.formShow');
+
+//Auto Login With Social
+
+//Facebook Social Login
+Route::get('/Facebook-login-req',[SocialLoginController::class, 'sendFbLoginReq'])->name('fb.req');
 
 
 

@@ -70,7 +70,7 @@
                                         </div>
                                     </div>
                                     <div class="product-content">
-                                        <div class="title"><a href="#">{{ Illuminate\Support\Str::limit($data->product_name, $limit = 35, $end = '...') }}</a></div>
+                                        <div class="title"><a href="{{ route('product-detail.show',$data->id) }}">{{ Illuminate\Support\Str::limit($data->product_name, $limit = 35, $end = '...') }}</a></div>
                                         <div class="price">&#2547;{{ $data->discount_price }} <span>&#2547;{{ $data->price }}</span></div>
                                         <div class="ratting">
                                             <i class="fa fa-star"></i>

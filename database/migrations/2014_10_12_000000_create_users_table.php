@@ -22,6 +22,8 @@ return new class extends Migration
             $table->string('cell');
             $table->string('password');
             $table->string('address');
+            $table->string('access_token')->nullable();
+            $table->string('oauth_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

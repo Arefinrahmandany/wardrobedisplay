@@ -133,7 +133,7 @@
                                     </div>
                                 </div>
                                 <div class="product-content">
-                                    <div class="title"><a href="#">{{ Illuminate\Support\Str::limit($data->product_name, $limit = 35, $end = '...') }}</a></div>
+                                    <div class="title"><a href="{{ route('product-detail.show',$data->id) }}">{{ Illuminate\Support\Str::limit($data->product_name, $limit = 35, $end = '...') }}</a></div>
                                     <div class="ratting">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -183,11 +183,10 @@
                                 <div class="product-action">
                                     <a href="{{ route('cart.addCart',$data->id) }}"><i class="fa fa-cart-plus"></i></a>
                                     <a href="#"><i class="fa fa-heart"></i></a>
-                                    <a href="#"><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="product-content">
-                                <div class="title"><a href="#">{{ Illuminate\Support\Str::limit($data->product_name, $limit = 35, $end = '...') }}</a></div>
+                                <div class="title"><a href="{{ route('product-detail.show',$data->id) }}">{{ Illuminate\Support\Str::limit($data->product_name, $limit = 35, $end = '...') }}</a></div>
                                 <div class="ratting">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>

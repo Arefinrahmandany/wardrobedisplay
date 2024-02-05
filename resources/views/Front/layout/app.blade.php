@@ -75,6 +75,9 @@
                             <div class="cart">
                                 <a href="{{ route('cart.index') }}"><i class="fa fa-cart-plus"></i><span>{{ $total }}</span></a>
                             </div>
+                            <div class="cart">
+                                <a href="{{ route('cart.index') }}"><i class="fa fa-heart-o"></i><span>{{ $total }}</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,18 +100,16 @@
                             <a href="{{ route('home.index') }}" class="nav-item nav-link active">Home</a>
                             <a href="{{ route('home.all-products') }}" class="nav-item nav-link">Products</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Category</a>
                                 <div class="dropdown-menu">
-                                    <a href="product-list.html" class="dropdown-item">Product</a>
-                                    <a href="product-detail.html" class="dropdown-item">Product Detail</a>
-                                    <a href="cart.html" class="dropdown-item">Cart</a>
-                                    <a href="wishlist.html" class="dropdown-item">Wishlist</a>
-                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
-                                    <a href="login.html" class="dropdown-item">Login & Register</a>
-                                    <a href="my-account.html" class="dropdown-item">My Account</a>
+                                    <a href="product-list.html" class="dropdown-item">Gents</a>
+                                    <a href="product-detail.html" class="dropdown-item">Women's</a>
+                                    <a href="cart.html" class="dropdown-item">Babys</a>
+                                    <a href="cart.html" class="dropdown-item">Calculetor</a>
+                                    <a href="cart.html" class="dropdown-item">Table Watch</a>
+                                    <a href="cart.html" class="dropdown-item">Wall Clock's</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                         </div>
                     </div>
                 </nav>
@@ -159,10 +160,10 @@
                             <ul>
                                 <li><a href="{{ route('home.all-products') }}">Product</a></li>
                                 <li><a href="{{ route('cart.index') }}">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="{{ route('Privacy-Policy.show') }}">Privacy Policy</a></li>
                                 <li><a href="{{ route('admin.login.form') }}">Login & Register</a></li>
                                 <li><a href="my-account.html">My Account</a></li>
-                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="{{ route('contact.formShow') }}">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -175,7 +176,6 @@
                                 <p><i class="fa fa-phone"></i>+880-151-1369287</p>
                                 <div class="social">
                                     <a href="{{ url('https://www.facebook.com/wardrobedisplay.bd/') }}"><i class="fa fa-facebook"></i></a>
-                                    <a href="{{ url('') }}"><i class="fa fa-linkedin"></i></a>
                                     <a href="{{ url('https://www.instagram.com/wardrobedisplay?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==') }}"><i class="fa fa-instagram"></i></a>
                                     <a href="{{ url('https://www.youtube.com/channel/UCBUhY8FTfob9H8xREfnkuTQ') }}"><i class="fa fa-youtube"></i></a>
                                     <a href="{{ url('https://wa.me/+8801511369287') }}"><i class="fa fa-whatsapp"></i></a>

@@ -17,9 +17,13 @@
                 <div class="section-header">
                     <h3>Login</h3>
                 </div>
-                    <div class="col-md-5 card m-2">
+                    <div class="col-md-8 card m-2">
                         <div class="login-form card-body">
-                            <h5>Login</h5>
+                            <div class="d-flex justify-content-between">
+                                <h5>Login</h5>
+                                <h5><a href="{{ route('register.create') }}" class="btn btn-primary">Registretion</a></h5>
+                            </div>
+
                             <form action="{{ route('admin.login') }}" method="POST" >
                                 @csrf
                                 @include('validation.validate')
@@ -48,9 +52,19 @@
                                 </div>
                             </form>
                         </div>
-                        <div>
-                            <a href="{{ route('register.create') }}" class="btn btn-primary">Registretion</a>
+
+                        <div class="row d-flex">
+                            <div class="col-md-3 mb-3 m-1 p-1">
+                                <a href="{{ route('fb.req') }}" class="btn btn-facebook btn-block btn-primary">Facebook <i class="fa fa-facebook"></i> </a>
+                            </div>
+                            <div class="col-md-3 m-1 p-1">
+                                <a href="" class="btn btn-google btn-block btn-danger">Google <i class="fa fa-google-plus" aria-hidden="true"></i></i></a>
+                            </div>
+                            <div class="col-md-3 m-1 p-1">
+                                <a href="" class="btn btn-block bg-gradient btn-lg btn-primary">Instagam <i class="fa fa-instagram"></i></a>
+                            </div>
                         </div>
+
                     </div>
         <!-- Login End -->
         </div>
